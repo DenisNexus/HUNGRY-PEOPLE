@@ -1,0 +1,50 @@
+.private-events {
+        background-image: url('../img/private-events/events-bg.png');
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: cover;
+        width: 100%; 
+        height: 100%;
+
+    &__description {
+        color: rgba(255, 255, 255, 0.5);
+        padding: 45px 0 45px 0;
+    }
+
+    &__cards{ 
+        @include space-between;
+
+        @media screen and (max-width: $b-md) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__topic{
+        padding: 45px 0 45px;
+    }
+}
+
+.weddings {
+    max-width: 600px;
+
+    @media screen and (max-width: $b-lg) {
+        margin-right:15px;
+    }
+    @media screen and (max-width: $b-md) {
+        max-width: 450px;
+        padding-bottom: 20px;
+    }
+}
+.parties {
+    max-width: 600px;
+
+    @media screen and (max-width: $b-lg) {
+        margin-left:15px;
+    }
+
+    @media screen and (max-width: $b-md) {
+        max-width: 450px;
+    }
+    
+}

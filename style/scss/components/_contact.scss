@@ -1,0 +1,127 @@
+.contact {
+    color: $black;
+
+    &__title {
+        padding-top: 100px;
+        text-align: center;
+
+        @media screen and (max-width: $b-ms) {
+            padding-top: 50px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 565px;
+        margin: 0 auto;
+
+        padding-top: 30px;
+        text-align: center;
+    }
+        
+    &__form {
+        padding-top: 55px;
+    }
+    &__wrapper {
+        @include flex (space-between, center);
+        
+        padding-bottom: 100px;
+
+        @media screen and (max-width: $b-ms) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: $b-ms) {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: $gray;
+
+        @media screen and (max-width: $b-ms) {
+           padding-top: 20px;
+        }
+    }
+
+    &__address{
+        position: relative;
+        padding-left: 20px;
+        margin: 5px 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../img/contact/point.svg');
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            
+        }
+    }
+
+    &__telephone{
+        position: relative;
+        padding-left: 20px;
+        margin: 5px 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../img/contact/phone.svg');
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            
+        }
+    }
+
+    &__mail{
+        position: relative;
+        padding-left: 20px;
+        margin: 5px 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../img/contact/email.svg');
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            
+        }
+    }
+
+    &__button {
+        width: 640px;
+
+        @media screen and (max-width: $b-ms) {
+            width:350px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: $b-ms) {
+            width: 100%;
+        }
+    }
+
+    &__input{
+        margin: 0 0 10px 5px;
+        width: calc(100% / 3 - 20px / 3);
+
+        &:first-child{
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: $b-ms) {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+}
+

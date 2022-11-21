@@ -1,0 +1,19 @@
+@mixin border ($height, $color) {
+    border: $height solid $color;
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center {
+    text-align: center;
+    align-items: center;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
