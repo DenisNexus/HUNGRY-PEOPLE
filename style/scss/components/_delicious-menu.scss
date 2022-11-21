@@ -43,7 +43,7 @@
         @media screen and (max-width: $b-lg) {
             margin: 0 25px;
         }
-        
+    
     }
 
     &__list {
@@ -102,6 +102,11 @@
         padding-bottom: 33px;
         width: 362px;
         text-align: left;
+
+        
+        @media screen and (max-width: $b-ms) {
+            width: 340px;
+        }
     }
 
     &__sub{
